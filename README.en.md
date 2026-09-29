@@ -8,7 +8,7 @@
 
 A **tiny Android test app** that shows whether system-wide "enable screenshot" tweaks are working — e.g. LSPosed's **Enable Screenshot / DisableFlagSecure**, or Magisk SurfaceFlinger patches.
 
-Install it, open it, take a screenshot. **Black or not black** — you instantly know whether your module actually works.
+Install it, open it, take a screenshot. Check whether the screenshot succeeds，**Black or not black** — you instantly know whether your module actually works.
 
 > Chinese: [README.md](README.md)
 
@@ -111,7 +111,7 @@ A: Your device already has an "enable screenshot" module (LSPosed's Enable Scree
 A: You can, but banking/payment apps often add root detection and hardware-level protection too, which muddies the result. This app isolates `FLAG_SECURE` itself.
 
 **Q: My target app is still black even with an unlock module.**
-A: Then it isn't using plain `FLAG_SECURE` but stronger hardware-level / DRM protection (secure video path, self-drawn secure layer, etc.), which common modules can't bypass.
+A: Make sure the module is enabled and the phone has been rebooted. If the screenshot is still black or cannot be taken at all,then it isn't using plain `FLAG_SECURE` but stronger hardware-level / DRM protection (secure video path, self-drawn secure layer, etc.), which common modules can't bypass.
 
 ## Disclaimer
 
